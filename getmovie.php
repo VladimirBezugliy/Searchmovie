@@ -76,7 +76,6 @@ class Search
             $mtime = filemtime($file);
         }
         $filetimeLive = $mtime + $cachetime;
-        $curTime = time();
 
         if (time() > $filetimeLive) {
             $curl = curl_init();
